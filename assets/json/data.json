@@ -1,0 +1,67 @@
+{
+  "content": [
+    {
+      "name": "Beautiful beige skirt",
+      "alt": "Beige skirt",
+      "img": "skirt_beige.png",
+      "price": "$39.99",
+      "description": "Enjoy the Autumn with this cute and lively skirt"
+    },
+    {
+      "name": "Fashionable pink shoes",
+      "alt": "Pink shoes",
+      "img": "shoes_pink.png",
+      "price": "$59.99",
+      "description": "Be the center of attention with these comfortable pink shoes"
+    },
+    {
+      "name": "Lovely pink shirt",
+      "alt": "Pink shirt",
+      "img": "shirt_pink.png",
+      "price": "$49.99",
+      "description": "Don't worry about spilling ketchup with this awesome pink shirt"
+    },
+    {
+      "name": "Cute brown pants",
+      "alt": "Brown pants",
+      "img": "pants_brown.png",
+      "price": "$119.99",
+      "description": "Shitting your pants has never been less of a problem with these brown pants"
+    },
+    {
+      "name": "Cute brown pants",
+      "alt": "Brown pants",
+      "img": "pants_brown.png",
+      "price": "$119.99",
+      "description": "Shitting your pants has never been less of a problem with these brown pants"
+    },
+    {
+      "name": "Cute brown pants",
+      "alt": "Brown pants",
+      "img": "pants_brown.png",
+      "price": "$119.99",
+      "description": "Shitting your pants has never been less of a problem with these brown pants"
+    },
+    {
+      "name": "Cute brown pants",
+      "alt": "Brown pants",
+      "img": "pants_brown.png",
+      "price": "$119.99",
+      "description": "Shitting your pants has never been less of a problem with these brown pants"
+    },
+    {
+      "name": "Cute brown pants",
+      "alt": "Brown pants",
+      "img": "pants_brown.png",
+      "price": "$119.99",
+      "description": "Shitting your pants has never been less of a problem with these brown pants"
+    },
+    {
+      "name": "Cute brown pants",
+      "alt": "Brown pants",
+      "img": "pants_brown.png",
+      "price": "$119.99",
+      "description": "Shitting your pants has never been less of a problem with these brown pants"
+    }
+  ]
+}
