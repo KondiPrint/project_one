@@ -1,5 +1,15 @@
+import Objects from "./Objects"
+
 export default class Main {
   constructor(data) {
+
+    this.data = data
+    this.loop()
+
+  } // ^ END constructor
+
+  loop() {
+
     const pageheader = document.createElement("header");
     pageheader.classList = "pageheader";
     document.body.appendChild(pageheader);
@@ -7,28 +17,33 @@ export default class Main {
     const main = document.createElement("main");
     document.body.appendChild(main);
 
-    const object__section = document.createElement("section");
-    object__section.classList = "object__section";
-    main.appendChild(object__section);
+    new Objects(this.data)
 
-    data.forEach((name, index) => {
-      const object__container = document.createElement("div");
-      object__container.classList = "object__container";
-      object__section.appendChild(object__container);
-
-      const object = document.createElement("div");
-      object.setAttribute("data-index", `${index}`);
-      object.classList = "object";
-      object__container.appendChild(object);
-
-      const object__title = document.createElement("h2");
-      object__title.classList = "object__title";
-      object__container.appendChild(object__title);
-
-      const object__nr = document.createElement("p");
-      object__nr.textContent = `${index + 1}`;
-      object__nr.classList = "object__nr";
-      object.appendChild(object__nr);
-    });
-  } // ^ END constructor
+  } // ^ END Objects
 } // ^ END class
+
+
+
+// * Dette er den kode jeg selv kom op med inden jeg spurgte ChatGPT om hjælp.
+/* object__img.addEventListener("click", event => {
+
+        gsap.to(event.currentTarget, {
+
+          duration: .5,
+          ease: "Circ.inOut",
+          rotationY: 180,
+          opacity: 0,
+
+          onComplete: event => {
+            object__img.addEventListener("click", event => {
+              gsap.to(event.currentTarget, {
+                duration: .5,
+                ease: "Circ.inOut",
+                opacity: 1,
+                rotationY: 360,
+              })
+            })
+          }
+        })
+        console.log(event.currentTarget)
+      }); */

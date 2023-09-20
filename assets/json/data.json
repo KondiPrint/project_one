@@ -1,67 +1,58 @@
 {
   "content": [
     {
-      "name": "Beautiful beige skirt",
-      "alt": "Beige skirt",
-      "img": "skirt_beige.png",
-      "price": "$39.99",
-      "description": "Enjoy the Autumn with this cute and lively skirt"
+      "name": "Macaque",
+      "alt": "Macaque eating a banana",
+      "img": "monkey_one.jpg",
+      "description": "One species, the Japanese macaques, is known for bathing in hot springs."
     },
     {
-      "name": "Fashionable pink shoes",
-      "alt": "Pink shoes",
-      "img": "shoes_pink.png",
-      "price": "$59.99",
-      "description": "Be the center of attention with these comfortable pink shoes"
+      "name": "Guenons",
+      "alt": "Guenons sitting on a tree in zoo",
+      "img": "monkey_two.jpg",
+      "description": "Guenons have large pouches in their cheeks to store food in."
     },
     {
-      "name": "Lovely pink shirt",
-      "alt": "Pink shirt",
-      "img": "shirt_pink.png",
-      "price": "$49.99",
-      "description": "Don't worry about spilling ketchup with this awesome pink shirt"
+      "name": "Howler Monkeys",
+      "alt": "Howler eating a juicy treat",
+      "img": "monkey_three.jpg",
+      "description": "Howler monkeys vocalizations can be heard up to 4.82 kilometers away."
     },
     {
-      "name": "Cute brown pants",
-      "alt": "Brown pants",
-      "img": "pants_brown.png",
-      "price": "$119.99",
-      "description": "Shitting your pants has never been less of a problem with these brown pants"
+      "name": "Night Monkeys",
+      "alt": "Night Monkey eating a fruit",
+      "img": "monkey_four.jpg",
+      "description": "These monkeys are sometimes referred to as 'Owl Monkeys'."
     },
     {
-      "name": "Cute brown pants",
-      "alt": "Brown pants",
-      "img": "pants_brown.png",
-      "price": "$119.99",
-      "description": "Shitting your pants has never been less of a problem with these brown pants"
+      "name": "Silverback Gorilla",
+      "alt": "Gorilla looking at the photographer",
+      "img": "gorilla.jpg",
+      "description": "The dominant silverback gorilla leads by charisma and example. He is always peaceful and rarely uses force."
     },
     {
-      "name": "Cute brown pants",
-      "alt": "Brown pants",
-      "img": "pants_brown.png",
-      "price": "$119.99",
-      "description": "Shitting your pants has never been less of a problem with these brown pants"
+      "name": "Bonobo",
+      "alt": "Bonobo contemplating life",
+      "img": "chimpanzee_one.jpg",
+      "description": "The bonobo (Pan paniscus) is an endangered great ape that is closely related to its sister species, the common chimpanzee."
     },
     {
-      "name": "Cute brown pants",
-      "alt": "Brown pants",
-      "img": "pants_brown.png",
-      "price": "$119.99",
-      "description": "Shitting your pants has never been less of a problem with these brown pants"
+      "name": "Bornean Orangutan",
+      "alt": "Orangutan starring",
+      "img": "orangutan.jpg",
+      "description": "Orangutans play a critical role in seed dispersal, keeping forests healthy. Over 500 plant species have been recorded in their diet."
     },
     {
-      "name": "Cute brown pants",
-      "alt": "Brown pants",
-      "img": "pants_brown.png",
-      "price": "$119.99",
-      "description": "Shitting your pants has never been less of a problem with these brown pants"
+      "name": "Homo Erectus",
+      "alt": "Homo Erectus contemplating",
+      "img": "homo_erectus.jpg",
+      "description": "Homo erectus' ability to make complex tools was possible because of the strength and dexterity in its hands"
     },
     {
-      "name": "Cute brown pants",
-      "alt": "Brown pants",
-      "img": "pants_brown.png",
-      "price": "$119.99",
-      "description": "Shitting your pants has never been less of a problem with these brown pants"
+      "name": "Homo Sapien",
+      "alt": "Carl Linnaeus portrait",
+      "img": "carl_linnaeus.jpg",
+      "description": "Genes and the environment influence human biological variation in visible characteristics, physiology, disease susceptibility, mental abilities, body size, and life span."
     }
   ]
 }
