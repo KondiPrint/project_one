@@ -1,4 +1,5 @@
 import Objects from "./Objects"
+import HeaderFooter from "./HeaderFooter";
 
 export default class Main {
   constructor(data) {
@@ -7,6 +8,8 @@ export default class Main {
     this.loop()
 
   } // ^ END constructor
+
+
 
   loop() {
 
@@ -17,33 +20,14 @@ export default class Main {
     const main = document.createElement("main");
     document.body.appendChild(main);
 
+    const pagefooter = document.createElement("footer");
+    pagefooter.classList = "pagefooter";
+    document.body.appendChild(pagefooter);
+
     new Objects(this.data)
+
+    new HeaderFooter(this.data)
+
 
   } // ^ END Objects
 } // ^ END class
-
-
-
-// * Dette er den kode jeg selv kom op med inden jeg spurgte ChatGPT om hjælp.
-/* object__img.addEventListener("click", event => {
-
-        gsap.to(event.currentTarget, {
-
-          duration: .5,
-          ease: "Circ.inOut",
-          rotationY: 180,
-          opacity: 0,
-
-          onComplete: event => {
-            object__img.addEventListener("click", event => {
-              gsap.to(event.currentTarget, {
-                duration: .5,
-                ease: "Circ.inOut",
-                opacity: 1,
-                rotationY: 360,
-              })
-            })
-          }
-        })
-        console.log(event.currentTarget)
-      }); */

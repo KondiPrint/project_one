@@ -54,5 +54,13 @@
       "img": "carl_linnaeus.jpg",
       "description": "Genes and the environment influence human biological variation in visible characteristics, physiology, disease susceptibility, mental abilities, body size, and life span."
     }
-  ]
+  ],
+
+  "headerFooterData": {
+    "headerHone": "Face our ancestors!",
+    "imgBlack": "ChimpAi_Converted.svg",
+    "alt_text": "Chimps logo",
+    "imgWhite": "ChimpAi_White.svg",
+    "myName": "Martin K. Nielsen"
+  }
 }

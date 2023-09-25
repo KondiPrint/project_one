@@ -3,5 +3,5 @@ import data from "../assets/json/data";
 import "../css/style.scss";
 
 (() => {
-  let init = new Main(data.content);
+  let init = new Main(data);
 })();

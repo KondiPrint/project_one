@@ -5,83 +5,84 @@ export default class Objects {
 
         this.data = data
         this.loop()
+
     }
 
     loop() {
 
-        const object__section = document.createElement("section");
-        object__section.classList = "object__section";
-        document.querySelector("main").appendChild(object__section);
+        const section = document.createElement("section");
+        section.classList = "section";
+        document.querySelector("main").appendChild(section);
 
-        this.data.forEach((info, index) => {
+        this.data.content.forEach((info, index) => {
 
-            const object__mainCont = document.createElement("div");
-            object__mainCont.classList = "object__mainCont";
-            object__section.appendChild(object__mainCont);
+            const section__mainCont = document.createElement("div");
+            section__mainCont.classList = "section__mainCont";
+            section.appendChild(section__mainCont);
 
-            const object__container = document.createElement("div");
-            object__container.classList = "object__container";
-            object__mainCont.appendChild(object__container);
+            const section__container = document.createElement("div");
+            section__container.classList = "section__container";
+            section__mainCont.appendChild(section__container);
 
-            const object = document.createElement("div");
-            object.setAttribute("data-index", `${index}`);
-            object.classList = "object";
-            object__container.appendChild(object);
+            const section__object = document.createElement("div");
+            section__object.setAttribute("data-index", `${index}`);
+            section__object.classList = "section__container-object";
+            section__container.appendChild(section__object);
 
-            const object__image = document.createElement("img");
-            object__image.setAttribute("data-index", `${index}`);
-            object__image.setAttribute("alt", `${info.alt}`)
-            object__image.src = "../assets/img/" + info.img
-            object__image.classList = "object__image"
-            object.appendChild(object__image)
+            const section__image = document.createElement("img");
+            section__image.setAttribute("data-index", `${index}`);
+            section__image.setAttribute("alt", `${info.alt}`)
+            section__image.src = "../assets/img/" + info.img
+            section__image.classList = "section__container-image"
+            section__object.appendChild(section__image)
 
-            const object__description = document.createElement("div");
-            object__description.setAttribute("data-index", `${index}`);
-            object__description.classList = "object__description"
-            object__description.textContent = info.description
-            object.appendChild(object__description)
+            const section__description = document.createElement("p");
+            section__description.setAttribute("data-index", `${index}`);
+            section__description.classList = "section__container-description"
+            section__description.textContent = info.description
+            section__object.appendChild(section__description)
 
-            const object__title = document.createElement("h2");
-            object__title.setAttribute("data-index", `${index}`);
-            object__title.textContent = info.name
-            object__title.classList = "object__title";
-            object__mainCont.appendChild(object__title);
+            const section__title = document.createElement("h2");
+            section__title.setAttribute("data-index", `${index}`);
+            section__title.textContent = info.name
+            section__title.classList = "section__mainCont-title";
+            section__mainCont.appendChild(section__title);
 
-            const object__number = document.createElement("p");
-            object__number.textContent = `${index + 1}`;
-            object__number.classList = "object__number";
-            object__container.appendChild(object__number);
+            const section__number = document.createElement("p");
+            section__number.textContent = `${index + 1}`;
+            section__number.classList = "section__container-number";
+            section__container.appendChild(section__number);
 
             // ! ChatGpt gav mig idéen angående "notAnimated"
             let notAnimated = true;
-            object__image.addEventListener("click", () => {
+            section__image.addEventListener("click", () => {
 
                 if (notAnimated) {
-                    gsap.to(object__image, {
-                        duration: 0.5,
+                    gsap.to(section__image, {
+                        duration: 0.2,
                         ease: "Circ.inOut",
                         rotationY: 180,
                         opacity: 0,
                         onComplete: () => {
                             notAnimated = false;
-                            object__description.style.opacity = 1;
+                            section__description.style.opacity = 1;
                         },
                     });
 
                 } else {
-                    gsap.to(object__image, {
-                        duration: 0.5,
+                    gsap.to(section__image, {
+                        duration: 0.2,
                         ease: "Circ.inOut",
                         rotationY: 0,
                         opacity: 1,
                         onComplete: () => {
                             notAnimated = true;
-                            object__image.removeAttribute("style");
-                            object__description.style.opacity = 0;
+                            section__image.removeAttribute("style");
+                            section__description.style.opacity = 0;
                         },
                     });
                 }
             }); // ^ END EventListener
-        }); // ^ END Loop
-    }
+        }); // ^ END forEach
+    } // ^ END Loop
 }
