@@ -21,8 +21,6 @@ export default class HeaderFooter {
 
         this.headerContent(this.data)
 
-        console.log(this.data)
-
     } // ^ END Loop
 
     headerContent(data) {
@@ -37,7 +35,6 @@ export default class HeaderFooter {
         h_one.classList = "pageheader__container-title"
         h_one.textContent = data.headerHone
         document.querySelector(".pageheader__container").appendChild(h_one)
-        console.log(data.headerHone);
 
         const pagefooter__name = document.createElement("h2")
         pagefooter__name.classList = "pagefooter__container-name"

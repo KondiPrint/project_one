@@ -1,4 +1,4 @@
-import { gsap } from "gsap";
+import Animation from "./Animation";
 
 export default class Objects {
     constructor(data) {
@@ -6,13 +6,23 @@ export default class Objects {
         this.data = data
         this.loop()
 
-    }
+    } // ^ END Constructor
 
     loop() {
+
+        const modeToggleBtn = document.createElement("input");
+        modeToggleBtn.setAttribute("type", `checkbox`)
+        modeToggleBtn.classList = "darkToggle"
+        document.querySelector("header").appendChild(modeToggleBtn)
+
+        // ? Dark / Light mode toggle call
+        const toggleAnimation = new Animation(modeToggleBtn);
+        toggleAnimation.toggleEffect(modeToggleBtn);
 
         const section = document.createElement("section");
         section.classList = "section";
         document.querySelector("main").appendChild(section);
+
 
         this.data.content.forEach((info, index) => {
 
@@ -48,41 +58,31 @@ export default class Objects {
             section__title.classList = "section__mainCont-title";
             section__mainCont.appendChild(section__title);
 
+            const section__link = document.createElement("a");
+            section__link.setAttribute("data-index", `${index}`);
+            section__link.setAttribute("href", `${info.link}`)
+            section__link.setAttribute("target", `_blank`)
+            section__link.classList = "section__mainCont-link";
+            section__mainCont.appendChild(section__link);
+
+            const section__linkImg = document.createElement("img");
+            section__linkImg.setAttribute("data-index", `${index}`);
+            section__linkImg.setAttribute("alt", `Wikipedia logo`)
+            section__linkImg.src = "../assets/img/wikipedia-w.svg"
+            section__linkImg.classList = "section__mainCont-linkImg"
+            section__link.appendChild(section__linkImg)
+
             const section__number = document.createElement("p");
             section__number.textContent = `${index + 1}`;
             section__number.classList = "section__container-number";
             section__container.appendChild(section__number);
 
-            // ! ChatGpt gav mig idéen angående "notAnimated"
-            let notAnimated = true;
-            section__image.addEventListener("click", () => {
+            // ? Her kalder jeg animationerne fra my "Animation" class.
+            const hoverAnimation = new Animation(section__linkImg);
+            hoverAnimation.hoverEffect();
 
-                if (notAnimated) {
-                    gsap.to(section__image, {
-                        duration: 0.2,
-                        ease: "Circ.inOut",
-                        rotationY: 180,
-                        opacity: 0,
-                        onComplete: () => {
-                            notAnimated = false;
-                            section__description.style.opacity = 1;
-                        },
-                    });
-
-                } else {
-                    gsap.to(section__image, {
-                        duration: 0.2,
-                        ease: "Circ.inOut",
-                        rotationY: 0,
-                        opacity: 1,
-                        onComplete: () => {
-                            notAnimated = true;
-                            section__image.removeAttribute("style");
-                            section__description.style.opacity = 0;
-                        },
-                    });
-                }
-            }); // ^ END EventListener
+            const clickAnimation = new Animation(section__image);
+            clickAnimation.clickEffect(section__description);
         }); // ^ END forEach
     } // ^ END Loop
-}
+} // ^ END Class

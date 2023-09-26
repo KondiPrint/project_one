@@ -4,55 +4,64 @@
       "name": "Macaque",
       "alt": "Macaque eating a banana",
       "img": "monkey_one.jpg",
-      "description": "One species, the Japanese macaques, is known for bathing in hot springs."
+      "description": "One species, the Japanese macaques, is known for bathing in hot springs.",
+      "link": "https://en.wikipedia.org/wiki/Macaque"
     },
     {
       "name": "Guenons",
       "alt": "Guenons sitting on a tree in zoo",
       "img": "monkey_two.jpg",
-      "description": "Guenons have large pouches in their cheeks to store food in."
+      "description": "Guenons have large pouches in their cheeks to store food in.",
+      "link": "https://en.wikipedia.org/wiki/Guenon"
     },
     {
       "name": "Howler Monkeys",
       "alt": "Howler eating a juicy treat",
       "img": "monkey_three.jpg",
-      "description": "Howler monkeys vocalizations can be heard up to 4.82 kilometers away."
+      "description": "Howler monkeys vocalizations can be heard up to 4.82 kilometers away.",
+      "link": "https://en.wikipedia.org/wiki/Howler_monkey"
     },
     {
       "name": "Night Monkeys",
       "alt": "Night Monkey eating a fruit",
       "img": "monkey_four.jpg",
-      "description": "These monkeys are sometimes referred to as 'Owl Monkeys'."
+      "description": "These monkeys are sometimes referred to as 'Owl Monkeys'.",
+      "link": "https://en.wikipedia.org/wiki/Night_monkey"
     },
     {
-      "name": "Silverback Gorilla",
+      "name": "Gorilla",
       "alt": "Gorilla looking at the photographer",
       "img": "gorilla.jpg",
-      "description": "The dominant silverback gorilla leads by charisma and example. He is always peaceful and rarely uses force."
+      "description": "The dominant silverback gorilla leads by charisma and example. He is always peaceful and rarely uses force.",
+      "link": "https://en.wikipedia.org/wiki/Gorilla"
     },
     {
       "name": "Bonobo",
       "alt": "Bonobo contemplating life",
       "img": "chimpanzee_one.jpg",
-      "description": "The bonobo (Pan paniscus) is an endangered great ape that is closely related to its sister species, the common chimpanzee."
+      "description": "The bonobo (Pan paniscus) is an endangered great ape that is closely related to its sister species, the common chimpanzee.",
+      "link": "https://en.wikipedia.org/wiki/Bonobo"
     },
     {
       "name": "Bornean Orangutan",
       "alt": "Orangutan starring",
       "img": "orangutan.jpg",
-      "description": "Orangutans play a critical role in seed dispersal, keeping forests healthy. Over 500 plant species have been recorded in their diet."
+      "description": "Orangutans play a critical role in seed dispersal, keeping forests healthy. Over 500 plant species have been recorded in their diet.",
+      "link": "https://en.wikipedia.org/wiki/Bornean_orangutan"
     },
     {
       "name": "Homo Erectus",
       "alt": "Homo Erectus contemplating",
       "img": "homo_erectus.jpg",
-      "description": "Homo erectus' ability to make complex tools was possible because of the strength and dexterity in its hands"
+      "description": "Homo erectus' ability to make complex tools was possible because of the strength and dexterity in its hands",
+      "link": "https://en.wikipedia.org/wiki/Homo_erectus"
     },
     {
       "name": "Homo Sapien",
       "alt": "Carl Linnaeus portrait",
       "img": "carl_linnaeus.jpg",
-      "description": "Genes and the environment influence human biological variation in visible characteristics, physiology, disease susceptibility, mental abilities, body size, and life span."
+      "description": "Genes and the environment influence human biological variation in visible characteristics, physiology, disease susceptibility, mental abilities, body size, and life span.",
+      "link": "https://en.wikipedia.org/wiki/Human"
     }
   ],
 

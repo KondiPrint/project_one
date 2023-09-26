@@ -9,8 +9,6 @@ export default class Main {
 
   } // ^ END constructor
 
-
-
   loop() {
 
     const pageheader = document.createElement("header");
@@ -27,7 +25,6 @@ export default class Main {
     new Objects(this.data)
 
     new HeaderFooter(this.data)
-
 
   } // ^ END Objects
 } // ^ END class
